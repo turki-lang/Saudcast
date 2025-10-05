@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لوحة التحكم - Play Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="login-screen" class="login-screen">
+    <h2>تسجيل الدخول للوحة التحكم</h2>
+    <input type="password" id="password" placeholder="أدخل كلمة المرور">
+    <button onclick="checkPassword()">دخول</button>
+  </div>
+  <div id="admin-panel" class="hidden">
+    <h2>إضافة منتج جديد</h2>
+    <input type="text" id="productName" placeholder="اسم المنتج">
+    <input type="number" id="productPrice" placeholder="السعر">
+    <input type="text" id="productImage" placeholder="رابط صورة المنتج">
+    <input type="text" id="whatsapp" placeholder="رقم واتساب بدون +">
+    <button onclick="addProduct()">إضافة المنتج</button>
+    <h2>المنتجات الحالية</h2>
+    <div id="adminProducts" class="product-list"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
